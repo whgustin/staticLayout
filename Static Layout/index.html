@@ -4,113 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Static Layout</title>
-    <link rel="stylesheet" type="text/css" href="staticlayout.css" />   
-</head>
-<body>
-    <div id="wrapper">
-    <h1>Rico's cheatsheets</h1>
-    <br>
-    <h4>Hey! I'm @rstacruz and this is a modest collection of cheatsheets I've written. </h4>
-    <br>
-    <div class="topnav">
-        <input type="text" placeholder="Search..">
+    <link rel="stylesheet" type="text/css" href="../Static Layout/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+
+    <!-- Header -->
+<div class="header">
+    <div id="back">
+        <a href="#" class="previousRound">&#8249;</a>
+    </div> 
+    
+    <div id="pointless">
+        <a href="https://devhints.io/">devhints.io</a>
+    </div>
+    
+    <div id="socialmedia">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevhints.io%2F" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/intent/tweet?text=Ridiculous%20collection%20of%20web%20development%20cheatsheets%20https://devhints.io/" class="fa fa-twitter"></a>
+    </div>
+</div>
+    <!-- Landing -->
+<div class="wrapper">
+    <div class="landingOne">
+        <h1>Rico's cheatsheets</h1>
+        <h4>Hey! I'm <a href="https://ricostacruz.com/"><b>@rstacruz</b></a> and this is a modest collection of cheatsheets I've written. </h4>
     </div>
     <br>
-    <p>Proudly sponsored byProudly sponsored by Rollbar Real-time error monitoring, alerting, and analytics for JavaScript developers 🚀
-        ethical ad by CodeFund </p>
-
-    <table>
+    <div class="search">
+        <form class="searchbox_1" action="">
+            <input type="search" class="search_1" placeholder="Search" />
+            <button type="submit" class="submit_1" value="search">&nbsp;</button>
+        </form>
+    </div>
+    <br>
+    <div class="landingTwo">
+        <p>Proudly sponsored by</p>
+        <span><b>You are in high demand!</b> Get offers from top tech<br> companies. No recruiters or resumes.</span>
+        <p><i>ethical</i> ad by CodeFund</p>
+    </div>
+    <br>
+    <br>
+    
+    <!-- Top Pages -->
+    <table class="topPages">
         <tr>
             <td>
-                <div>
+                <div id="bash">
                     <a href="https://devhints.io/bash">bash</a>
                 </div>
             </td>
             <td>
-                <div>
+                <div id="enzyme">
                     <a href="https://devhints.io/enzyme">enzyme</a>                
                 </div>
             </td>
             <td>
-                <div>
+                <div id="es6">
                     <a href="https://devhints.io/es6">es6</a>                
                 </div>
             </td>
             <td>
-                <div>
+                <div id="go">
                     <a href="https://devhints.io/go">go</a>                
                 </div>
             </td>
         </tr>
         <tr>
             <td>
-                <div>
+                <div id="react">
                     <a href="https://devhints.io/react">react</a>                
                 </div>
             </td>
             <td>
-                <div>
+                <div id="sass">
                     <a href="https://devhints.io/sass">sass</a>                
                 </div>
             </td>
             <td>
-                <div>
+                <div id="vim">
                     <a href="https://devhints.io/vim">vim</a>                
                 </div>
             </td>
             <td>
-                <div>
+                <div id="xpath">
                     <a href="https://devhints.io/xpath">xpath</a>
                 </div>
             </td>
         </tr>
     </table>
     <br>
-    <h4>Recently updated</h4>
-    <hr>
-    <table>
-        <tr>
-            <td>
-                <a href="https://devhints.io/regexp">regexp</a>
-            </td>
-            <td>
-                <a href="https://devhints.io/bash">bash</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://devhints.io/jsdoc">jsdoc</a>
-            </td>
-            <td>
-                <a href="https://devhints.io/scp">scp</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://devhints.io/rest-api">rest-api</a>
-            </td>
-            <td>
-                <a href="https://devhints.io/mysql">mysql</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://devhints.io/bolt">bolt</a>
-            </td>
-            <td>
-                <a href="https://devhints.io/kotlin">kotlin</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://devhints.io/css-grid">css-grid</a>
-            </td>
-            <td>
-                <a href="https://devhints.io/csharp7">csharp7</a>
-            </td>
-        </tr>
-        <tr>
+    
+    <!-- Recently Updated-->
+    <div class="recentlyUpdated">
+        <h4><strong>Recently updated</strong></h4>
+        <hr>
+        <table class="content-table">
+            <tr>
+                <td>
+                    <a href="https://devhints.io/regexp">regexp</a>
+                </td>
+                <td>
+                    <a href="https://devhints.io/bash">bash</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://devhints.io/jsdoc">jsdoc</a>
+                </td>
+                <td>
+                    <a href="https://devhints.io/scp">scp</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://devhints.io/rest-api">rest-api</a>
+                </td>
+                <td>
+                    <a href="https://devhints.io/mysql">mysql</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://devhints.io/bolt">bolt</a>
+                </td>
+                <td>
+                    <a href="https://devhints.io/kotlin">kotlin</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://devhints.io/css-grid">css-grid</a>
+                </td>
+                <td>
+                    <a href="https://devhints.io/csharp7">csharp7</a>
+                </td>
+            </tr>
+            <tr>
             <td>
                 <a href="https://devhints.io/bulma">bulma</a>
             </td>
@@ -143,48 +175,57 @@
             </td>
         </tr>
     </table>
-<h4>Analytics</h4>
-<hr>
-<table>
-    <tr>
-        <td>
-            <a href="https://devhints.io/analytics.js">analytics.js</a>
-        </td>
-        <td>
-            <a href="https://devhints.io/analytics">analytics</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="https://devhints.io/mixpanel">mixpanel</a>
-        </td>
-    </tr>
-</table>
-<h4>Ansible</h4>
-<hr>
-<table>
-    <tr>
-        <td>
-            <a href="https://devhints.io/ansible-examples">ansible-examples</a>
-        </td>
-        <td>
-            <a href="https://devhints.io/ansible-guide">ansible-guide</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="https://devhints.io/ansible-modules">ansible-modules</a>
-        </td>
-        <td>
-            <a href="https://devhints.io/ansible-roles">ansible-roles</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="https://devhints.io/ansible">ansible</a>
-        </td>
-    </tr>
-</table>
+</div> 
+
+<!-- Analytics-->
+<div class="analytics">
+    <h4><strong>Analytics</strong></h4>
+    <hr>
+    <table class="content-table">
+        <tr>
+            <td>
+                <a href="https://devhints.io/analytics.js">analytics.js</a>
+            </td>
+            <td>
+                <a href="https://devhints.io/analytics">analytics</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://devhints.io/mixpanel">mixpanel</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- Ansible -->
+<div class="ansible">
+    <h4><strong>Ansible</strong></h4>
+    <hr>
+    <table class="content-table">
+        <tr>
+            <td>
+                <a href="https://devhints.io/ansible-examples">ansible-examples</a>
+            </td>
+            <td>
+                <a href="https://devhints.io/ansible-guide">ansible-guide</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://devhints.io/ansible-modules">ansible-modules</a>
+            </td>
+            <td>
+                <a href="https://devhints.io/ansible-roles">ansible-roles</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://devhints.io/ansible">ansible</a>
+            </td>
+        </tr>
+    </table>
+</div>
 </div>
 </body>
 </html>
